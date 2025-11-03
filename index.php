@@ -13,16 +13,14 @@
 </head>
 <body>
     <div class="mainContainer">
-        <div class="secundaryCont">
-            <p class="title">Don't Look at Me</p>
-            <div class="contUser">
-                <button class="btn" id="btnLogin">Logar</button>
-                <button class="btn" id="btnCadastro">Cadastrar</button>
-            </div>
-            <button class="btn" id="btnJogar">Jogar</button>
-            <button class="btn" id="btnPlacar">Placar</button>
-            <button class="btn" id="btnCreditos">Créditos</button>
+        <h1 class="title">Don't Look at Me</h1>
+        <div class="contUser">
+            <button class="btn" id="btnLogin">Logar</button>
+            <button class="btn" id="btnCadastro">Cadastrar</button>
         </div>
+        <button class="btn" id="btnJogar">Jogar</button>
+        <button class="btn" id="btnPlacar">Placar</button>
+        <button class="btn" id="btnCreditos">Créditos</button>
     </div>
     <p class="version">Versão 0.01</p>
 </body>
