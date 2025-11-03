@@ -24,5 +24,6 @@
             <button class="btn" id="btnCreditos">Créditos</button>
         </div>
     </div>
+    <p class="version">Versão 0.01</p>
 </body>
 </html>
