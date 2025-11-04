@@ -14,6 +14,7 @@
 <body>
     <div class="scrollableContainer">
         <h1 class="title">Relatório das Nações Unidas</h1>
+        <img class="imagem" id="imgOnu" src="issets/onuLogo.png" alt="ONU logo"></img>
         <p class="txt">
             No dia 29 de novembro de 2026, primeiro domingo do Advento Católico Apostólico Romano, às 15 horas da tarde,
             uma misteriosa e inexplicável chuva(ou nevasca, a depender do local), branda, foi relatada em TODOS os locais do planeta. 
@@ -33,9 +34,9 @@
             como raiva, medo, solidão, e alegria, porém, todas EXTREMAMENTE LETAIS, devido à desafiarem a mente humana de tal 
             modo a induzir loucura, suicído, sadismo e esquizofrenia, podendo também serem agressivos.
         </p>
-        <img id="img2" src="" alt="">
-        <img id="img3" src="" alt="">
-        <img id="img4" src="" alt="">
+        <img class="imagem" id="img2" src="issets/neutro.jpeg" alt="neutro">
+        <img class="imagem" id="img3" src="issets/agressivoImage.jpeg" alt="agressivo">
+        <img class="imagem" id="img4" src="issets/voidPixelated.jpeg" alt="lambda">
         <p class="txt">
             A ONU criou um departamento de pesquisa e neutralização de anomalias, que estuda e coleta relatos de pessoas que 
             interagiram direta ou indiretamente com eventos, criaturas, artefatos ou locais anômalos. Através de agora semanas 
@@ -60,6 +61,10 @@
             Agradecemos sua bravura ao se alistar para tal operação, consciente dos riscos e alta letalidade da mesma. Deus te 
             proteja e guie, através do vale da sombra da morte, nossa antiga casa.
         </p>
+        <div class="btnContainer">
+            <button class="btn" id="btnRetornar">Retornar</button>
+            <button class="btn" id="btnProximo">Próximo</button>
+        </div>
     </div>
     <p class="version">Versão 0.01</p>
 </body>
