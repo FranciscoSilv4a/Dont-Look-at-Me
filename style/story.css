@@ -1,0 +1,57 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../issets/rainingFieldBg.gif);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.scrollableContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    height: 42rem;
+    width: 50rem;
+    padding: 2rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    box-shadow: 0rem 0.5rem 1rem black;
+}
+.txt {
+    text-align: justify;
+    color: #88ff5a;
+    font-weight: bold;
+}
+#img1 {
+    height: 30rem;
+    width: 25rem;
+    border-radius: 10px;
+}
+.version {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    color: #c8cc98;
+}

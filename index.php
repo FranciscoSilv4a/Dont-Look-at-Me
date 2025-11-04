@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="mainContainer">
-        <h1 class="title">Don't Look at Me</h1>
+        <div class="title"></div>
         <div class="contUser">
             <button class="btn" id="btnLogin">Logar</button>
             <button class="btn" id="btnCadastro">Cadastrar</button>
