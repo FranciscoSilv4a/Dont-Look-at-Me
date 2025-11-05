@@ -47,7 +47,7 @@
     </div>
     <div class="imgBlack"></div>
     <div class="inventario">
-        <div class="itemInventario" id="item1"></div>
+        <div class="itemInventario full" id="item1"></div>
         <div class="itemInventario" id="item2"></div>
         <div class="itemInventario" id="item3"></div>
         <div class="itemInventario" id="item4"></div>
