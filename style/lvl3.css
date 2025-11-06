@@ -211,8 +211,8 @@ body {
 }
 .bloodContainer {
     position: absolute;
+    display: none;
     justify-content: center;
-    display: flex;
     align-items: center;
     height: 100%;
     width: 100%;

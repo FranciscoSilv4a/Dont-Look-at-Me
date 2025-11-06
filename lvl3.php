@@ -55,6 +55,9 @@
         <div class="itemInventario" id="item4" onmouseover="pointerHand()" onmouseout="normalHand()"></div>
         <div class="itemInventario" id="item5" onmouseover="pointerHand()" onmouseout="normalHand()"></div>
     </div>
+    <audio class = "audioPlayer" controls loop>
+        <source src="music/schizoVoices.mp3">
+    </audio>
     <div class="hand"></div>
     <p class="version">Versão 0.01</p>
 </body>

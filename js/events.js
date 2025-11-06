@@ -17,3 +17,9 @@ function closeDicas() {
     let dicaContainer = document.querySelector(".dicaContainer");
     dicaContainer.style.display = "none";
 }
+// áudios
+if(window.location == 'localhost/Dont-Look-at-Me/lvl3.php') {
+    document.querySelector(".dica").addEventListener('onmouseover', () => {
+        document.querySelector(".audioPlayer").play();
+    });
+}

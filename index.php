@@ -22,6 +22,9 @@
         <button class="btn" id="btnPlacar">Placar</button>
         <button class="btn" id="btnCreditos">Créditos</button>
     </div>
+    <audio controls>
+        <source src="">
+    </audio>
     <p class="version">Versão 0.01</p>
 </body>
 </html>
