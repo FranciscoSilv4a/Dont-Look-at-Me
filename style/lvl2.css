@@ -16,40 +16,12 @@ body {
     align-items: center;
     height: 100vh;
     width: 100%;
-    background-image: url(../issets/solitarySkeletonPixelated.jpeg);
+    background-image: url(../issets/floatinPixelated.jpeg);
     background-size:cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     overflow: hidden;
     position: relative;
-}
-.imgBlack {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-image: url(../issets/solitarySkeletonMask.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    transform: translateY(-0.5rem);
-    z-index: -1;
-}
-.bloodContainer {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    background-image: url(../issets/bloodPixelated.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-#gameOver {
-    font-size: 2rem;
-    color: white;
-    text-shadow: 4px 4px 3px #ff3728, -4px -4px 3px #ff3728;
 }
 .hand {
     position: absolute;
@@ -77,8 +49,8 @@ body {
     flex-wrap: wrap;
     padding: 2rem;
     row-gap: 1rem;
-    height: 13rem;
-    width: 50rem;
+    height: 17rem;
+    width: 25rem;
     right: 2rem;
     top: 2rem;
     border-radius: 15px;
@@ -140,7 +112,7 @@ body {
     height: 3rem;
     width: 3rem;
     border-radius: 10px;
-    background-image: url(../issets/lightBulb.webp);
+    background-image: url("../issets/lightBulb.webp");
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -224,11 +196,40 @@ body {
     color: white;
     background-image: none;
 }
+.imgBlack {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(../issets/floatinPixelatedMask.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    transform: translateY(-0.5rem);
+    z-index: -1;
+}
+.bloodContainer {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-image: url(../issets/bloodPixelated.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#gameOver {
+    font-size: 2rem;
+    color: white;
+    text-shadow: 4px 4px 3px #ff3728, -4px -4px 3px #ff3728;
+}
 .full {
     background-color: rgba(57, 151, 98, 0.4);
 }
 #item1 {
-    background-image: url(../issets/walkieTalkiePixelated.png);
+    background-image: url("../issets/walkieTalkiePixelated.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

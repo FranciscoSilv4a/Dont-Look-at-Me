@@ -7,29 +7,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nível 1</title>
-    <link rel="stylesheet" href="style/lvl1.css">
-    <script defer src="js/lvl1.js.js"></script>
+    <title>Nível 2</title>
+    <link rel="stylesheet" href="style/lvl2.css">
+    <script defer src="js/lvl2.js.js"></script>
     <script defer src="js/events.js"></script>
 </head>
 <body>
     <div class="mainContainer">
-        <div class="title">Tentativa número 1</div>
+        <div class="title">Tentativa número 2</div>
         <p class="txt">
-            Esta criatura aparenta estar calma, refletindo sobre sua própria existência. Entretanto, mantenha distância 
-            não sabemos que tipos de vírus e patógenos, mesmo as mais inofensivas anomalias, podem carregar.
-             O que está a sua frente 
-            se classifica como uma CRIATURA ANÔMALA NEUTRA.
+            A anomaia é circular. A pradaria em que você se encontra está repleta de uma presença 
+            assustadora, algo te observa, algo muito AGRESSIVO. A brisa toca as árvores à sua frente, 
+            balançando-as de forma calma. Você se sente ameaçado, mas o ambiente parece familiar.
         </p>
     </div>
     <div class="btnContainer">
         <p class="title">
             Possibilidades:
         </p>
-        <button class="btn" id="btnA" onmouseover="pointerHand()" onmouseout="normalHand()">a) Esqueleto solitário</button>
-        <button class="btn" id="btnB" onmouseover="pointerHand()" onmouseout="normalHand()">b) Nietzsche ressucitado</button>
-        <button class="btn" id="btnC" onmouseover="pointerHand()" onmouseout="normalHand()">c) Seu eu verdadeiro</button>
-        <button class="btn" id="btnC" onmouseover="pointerHand()" onmouseout="normalHand()">d) Senhor dos mares</button>
+        <button class="btn" id="btnA" onmouseover="pointerHand()" onmouseout="normalHand()">a) Disco voador</button>
+        <button class="btn" id="btnB" onmouseover="pointerHand()" onmouseout="normalHand()">b) Cabeça flutuante</button>
+        <button class="btn" id="btnC" onmouseover="pointerHand()" onmouseout="normalHand()">c) Lua?</button>
+        <button class="btn" id="btnC" onmouseover="pointerHand()" onmouseout="normalHand()">d) Buraco negro</button>
         <div class="dica" onmouseover="pointerHand()" onmouseout="normalHand()" onclick="openDicas()"></div>
     </div>
     <div class="dicaContainer">
@@ -47,7 +46,7 @@
     </div>
     <div class="imgBlack"></div>
     <div class="bloodContainer">
-        <p class="title" id="gameOver">Sua mente não aguenta tamanha solidão</p>
+        <p class="title" id="gameOver">Sua mente sucumbe</p>
     </div>
     <div class="inventario">
         <div class="itemInventario full" id="item1"></div>
