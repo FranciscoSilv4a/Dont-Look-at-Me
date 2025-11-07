@@ -1,11 +1,12 @@
+// EVENTOS PARA A FOGUEIRA
 // animações da mão
 function pointerHand() {
     let hand = document.querySelector('.hand');
-    hand.style.backgroundImage = "url('issets/handPointer.png')";
+    hand.style.backgroundImage = "url('issets/handPointerFire.png')";
 }
 function normalHand() {
     let hand = document.querySelector('.hand');
-    hand.style.backgroundImage = "url('issets/handIcon.png')";
+    hand.style.backgroundImage = "url('issets/handIconFire.png')";
 }
 
 // abrir e fechar a aba de dicas
@@ -21,14 +22,10 @@ function closeDicas() {
     let dicaContainer = document.querySelector(".dicaContainer");
     dicaContainer.style.display = "none";
 }
-// áudios
-    /*document.querySelector(".dica").addEventListener('onclick', () => {
-        document.querySelector(".audioPlayer").play();
-    });*/
 
-// eventos inventário
-const itemsIventario = document.getElementsByClassName("itemInventario");
-itemsIventario.addEventListener('onmouseover', () => {
+// eventos inventário => talvez tenha q fazer um arquivo de eventos de inventário para cada nível, por causa do tanto de if
+const item1 = document.getElementById('item1');
+item1.addEventListener('onmouseover', () => {
     let nomeItem = document.querySelector('.nomeItem');
     nomeItem.style.color = "white";
-});
+}); //  fazer isso funcionar

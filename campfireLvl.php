@@ -9,8 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Descanso</title>
     <link rel="stylesheet" href="style/campfireLvl.css">
-    <script defer src="js/lvl2.js.js"></script>
-    <script defer src="js/events.js"></script>
+    <script defer src="js/campfireLvl.js"></script>
 </head>
 <body>
     <div class="mainContainer">
@@ -45,8 +44,9 @@
         <p class="title" id="gameOver">Sua mente sucumbe</p>
     </div>
      <div class="inventario">
-        <div class="itemInventario full" id="item1" onmouseover="pointerHand()" onmouseout="normalHand()">Walkie talkie</div>
-        <div class="itemInventario" id="item2" onmouseover="pointerHand()" onmouseout="normalHand()">mudar no js--Artefato de argila</div>
+        <div class="nomeItem">aaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+        <div class="itemInventario full" id="item1" onmouseover="pointerHand()" onmouseout="normalHand()"></div>
+        <div class="itemInventario" id="item2" onmouseover="pointerHand()" onmouseout="normalHand()"></div>
         <div class="itemInventario" id="item3" onmouseover="pointerHand()" onmouseout="normalHand()"></div>
         <div class="itemInventario" id="item4" onmouseover="pointerHand()" onmouseout="normalHand()"></div>
         <div class="itemInventario" id="item5" onmouseover="pointerHand()" onmouseout="normalHand()"></div>
