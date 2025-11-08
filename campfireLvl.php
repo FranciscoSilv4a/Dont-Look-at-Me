@@ -24,20 +24,15 @@
         <p class="title">
             Você
         </p>
-        <div class="next" onmouseover="pointerHand()" onmouseout="normalHand()" onclick="openDicas()"></div>
-    </div>
-    <div class="dicaContainer">
-        <div class="close" onmouseover="pointerHand()" onmouseout="normalHand()" onclick="closeDicas()"></div>
-        <p class="title" id="titleDicas">Dicas</p>
-        <p class="txt">
-            1) A anomalia não está viva, no sentido convencional.
+        <p class="txt dialog" id="dialog1">
+            O mundo está acabando, mesmo assim, as pessoas se ajudam, por isso me alistei. As chances de eu 
+            sair vivo desta operação são mínimas, mas cada anomalia que impeço de machucar alguém, criar um 
+            buraco numa família, vale a pena.
         </p>
-        <p class="txt">
-            2) A criatura não é uma personificação do abstrato.
-        </p>
-        <p class="txt">
-            3) O alvo não aparenta ter nenhuma autoridade sobre a natureza.
-        </p>
+        <p class="txt dialog" id="dialog2"></p>
+        <p class="txt dialog" id="dialog3"></p>
+        <p class="txt dialog" id="dialog4"></p>
+        <div class="next" onmouseover="pointerHand()" onmouseout="normalHand()" onclick="nextDialog()"></div>
     </div>
     <div class="imgBlack"></div>
     <div class="bloodContainer">

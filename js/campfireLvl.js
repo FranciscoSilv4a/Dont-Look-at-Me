@@ -22,6 +22,25 @@ function closeDicas() {
     let dicaContainer = document.querySelector(".dicaContainer");
     dicaContainer.style.display = "none";
 }
+// trocar diálogo
+const nextDialog = () => {
+    const dialog1 = document.getElementById('dialog1');
+    const dialog2 = document.getElementById('dialog2');
+    const dialog3 = document.getElementById('dialog3');
+    const dialog4 = document.getElementById('dialog4');
+    if(dialog1.style.color == '#ffc35a') {
+        dialog1.style.color = 'transparent';
+        dialog2.style.color = '#ffc35a';
+    }
+    else if(dialog2.style.color == '#ffc35a') {
+        dialog2.style.color = 'transparent';
+        dialog3.style.color = '#ffc35a';
+    }
+    else {
+        dialog3.style.color = 'transparent';
+        dialog4.style.color = '#ffc35a';
+    }
+}
 
 // eventos inventário => talvez tenha q fazer um arquivo de eventos de inventário para cada nível, por causa do tanto de if
 const item1 = document.getElementById('item1');

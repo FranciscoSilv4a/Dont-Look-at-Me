@@ -82,12 +82,19 @@ body {
     height: 15rem;
     width: 30rem;
     left: 2rem;
-    top: 20rem;
+    top: 15rem;
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
     box-shadow: 0rem 0.5rem 1rem black;
     position: absolute;
+}
+.dialog {
+    /* vai virar color: #ffc35a; um por um*/
+    color: transparent;
+}
+#dialog1 {
+    color: #ffc35a;
 }
 .btn {
     text-align: center;
@@ -109,16 +116,18 @@ body {
     width: 21rem;
 }
 .next {
+    position: absolute;
     height: 3rem;
     width: 3rem;
-    border-radius: 10px;
-    background-image: url("../issets/lightBulb.webp");
+    bottom: 0.5rem;
+    right: 1rem;
+    background-image: url("../issets/nextIcon.png");
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
     transition: all 0.25s;
 }
-.dica:hover {
+.next:hover {
     height: 4rem;
     width: 4rem;
 }
