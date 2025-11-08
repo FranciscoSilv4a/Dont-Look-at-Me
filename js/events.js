@@ -1,3 +1,6 @@
+//  declaração de variáveis importantes
+const btn = document.getElementsByClassName('.btn');
+
 // animações da mão
 function pointerHand() {
     let hand = document.querySelector('.hand');
@@ -25,10 +28,3 @@ function closeDicas() {
     /*document.querySelector(".dica").addEventListener('onclick', () => {
         document.querySelector(".audioPlayer").play();
     });*/
-
-// eventos inventário
-const itemsIventario = document.getElementsByClassName("itemInventario");
-itemsIventario.addEventListener('onmouseover', () => {
-    let nomeItem = document.querySelector('.nomeItem');
-    nomeItem.style.color = "white";
-});

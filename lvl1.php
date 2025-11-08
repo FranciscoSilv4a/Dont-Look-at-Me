@@ -1,5 +1,13 @@
 <?php
-    //
+    session_start();
+    $passou = 0;
+    if($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $valor = $_POST['alt'];
+        if($valor) {
+            $_SESSION['passou1'] = 1;
+            $passou = $_SESSION['passou'];
+        }
+    }
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +17,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nível 1</title>
     <link rel="stylesheet" href="style/lvl1.css">
-    <script defer src="js/lvl1.js.js"></script>
     <script defer src="js/events.js"></script>
 </head>
 <body>
@@ -22,16 +29,16 @@
             se classifica como uma CRIATURA ANÔMALA NEUTRA.
         </p>
     </div>
-    <div class="btnContainer">
+    <form class="btnContainer">
         <p class="title">
             Possibilidades:
         </p>
-        <button class="btn" id="btnA" onmouseover="pointerHand()" onmouseout="normalHand()">a) Esqueleto solitário</button>
-        <button class="btn" id="btnB" onmouseover="pointerHand()" onmouseout="normalHand()">b) Nietzsche ressucitado</button>
-        <button class="btn" id="btnC" onmouseover="pointerHand()" onmouseout="normalHand()">c) Seu eu verdadeiro</button>
-        <button class="btn" id="btnC" onmouseover="pointerHand()" onmouseout="normalHand()">d) Senhor dos mares</button>
-        <div class="dica" onmouseover="pointerHand()" onmouseout="normalHand()" onclick="openDicas()"></div>
-    </div>
+            <button type="submit"class="btn" id="btnA" name ="alt" value="1" onmouseover="pointerHand()" onmouseout="normalHand()">a) Esqueleto solitário</button>
+            <button type="submit"class="btn" id="btnB" name ="alt" onmouseover="pointerHand()" onmouseout="normalHand()">b) Nietzsche ressucitado</button>
+            <button type="submit"class="btn" id="btnC" name ="alt" onmouseover="pointerHand()" onmouseout="normalHand()">c) Seu eu verdadeiro</button>
+            <button type="submit"class="btn" id="btnC" name ="alt" onmouseover="pointerHand()" onmouseout="normalHand()">d) Senhor dos mares</button>
+            <div class="dica" onmouseover="pointerHand()" onmouseout="normalHand()" onclick="openDicas()"></div>
+</form>
     <div class="dicaContainer">
         <div class="close" onmouseover="pointerHand()" onmouseout="normalHand()" onclick="closeDicas()"></div>
         <p class="title" id="titleDicas">Dicas</p>
@@ -58,5 +65,13 @@
     </div>
     <div class="hand"></div>
     <p class="version">Versão 0.01</p>
+
+    <script defer>
+        let passou = "<?=$passou?>";
+        if(!passou) {
+            document.querySelector('.bloodContainer').style.display = 'flex';
+            console.log(passou);
+        }
+    </script>
 </body>
 </html>
