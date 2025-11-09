@@ -1,14 +1,24 @@
 <?php
     session_start();
+    $_SESSION['passou1'] = 0;
+
     $passou = 0;
     if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $valor = $_POST['alt'];
         if($valor) {
             $_SESSION['passou1'] = 1;
-            $passou = $_SESSION['passou'];
+            $passou = $_SESSION['passou1'];
         }
     }
 ?>
+
+<script>
+    let passou = "<?=$passou?>";
+    if(!passou) {
+        document.querySelector('.bloodContainer').style.display = 'flex';
+        console.log(passou);
+    }
+</script>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -65,13 +75,5 @@
     </div>
     <div class="hand"></div>
     <p class="version">Versão 0.01</p>
-
-    <script defer>
-        let passou = "<?=$passou?>";
-        if(!passou) {
-            document.querySelector('.bloodContainer').style.display = 'flex';
-            console.log(passou);
-        }
-    </script>
 </body>
 </html>

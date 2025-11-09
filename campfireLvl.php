@@ -40,11 +40,11 @@
     </div>
      <div class="inventario">
         <div class="nomeItem">aaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
-        <div class="itemInventario full" id="item1" onmouseover="pointerHand()" onmouseout="normalHand()"></div>
-        <div class="itemInventario" id="item2" onmouseover="pointerHand()" onmouseout="normalHand()"></div>
-        <div class="itemInventario" id="item3" onmouseover="pointerHand()" onmouseout="normalHand()"></div>
-        <div class="itemInventario" id="item4" onmouseover="pointerHand()" onmouseout="normalHand()"></div>
-        <div class="itemInventario" id="item5" onmouseover="pointerHand()" onmouseout="normalHand()"></div>
+        <div class="itemInventario full" id="item1" onmouseover="mostrarNome()"></div>
+        <div class="itemInventario" id="item2"></div>
+        <div class="itemInventario" id="item3"></div>
+        <div class="itemInventario" id="item4"></div>
+        <div class="itemInventario" id="item5"></div>
     </div>
     <div class="hand"></div>
     <p class="version">Versão 0.01</p>
