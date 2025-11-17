@@ -1,5 +1,5 @@
 // variáveis importantes
-const itensInventario = document.getElementsByClassName('itemInventario');
+const itemInventario = document.querySelector('.itemInventario');
 const nomeItem = document.querySelector('.nomeItem');
 const nextBtn = document.querySelector('.next');
 const dialog1 = document.getElementById('dialog1'); //  diálogos
@@ -17,30 +17,22 @@ function normalHand() {
     hand.style.backgroundImage = "url('issets/handIconFire.png')";
 }
 // trocar diálogo
-function nextDialog() {
-    if(dialog1.style.display == 'inline-block') {
-        dialog1.style.display = 'none';
-        dialog2.style.display = 'inline-block';
-    }
+const nextDialog = () => {
+    console.log(document.getElementById('dialog1').style.getPropertyValue('color'));
 }
 // eventos inventário => talvez tenha q fazer um arquivo de eventos de inventário para cada nível, por causa do tanto de if
 
-function mostrarNome() {
+const mostrarNome = () => {
     nomeItem.style.color = "white";
 } //  fazer isso funcionar => Só era limpar o código KKKKKKKKKKKKKKKKKKKKKK
-//  ADICIONANDO EVENT-LISTENERS
-/*for(let i = 1; i <= 4; i++) {
-    let item = document.getElementById(`item${i}`);
-    item.addEventListener('onmouseover', pointerHand);
-    item.addEventListener('onmouseout', normalHand);
-    item.addEventListener('onmouseover', mostrarNome);
+const esconderNome = () => {
+    nomeItem.style.color = "transparent";
 }
-nextBtn.addEventListener('onmouseover', pointerHand); //  next
-nextBtn.addEventListener('onmouseout', normalHand);*/
-nextBtn.addEventListener('click', nextDialog);
-
-/*  lições
-        -> deixar o código limpo
-        -> de vez em quando o navegador demora pra entender as mudanças, mesmo limpando o cache
-        -> não pode usar () no uso das funções como parâmetro
-*/
+//  ADICIONANDO EVENT-LISTENERS
+itemInventario.addEventListener('onmouseover', pointerHand());  //  item hand
+itemInventario.addEventListener('onmouseout', normalHand());
+itemInventario.addEventListener('onmouseover', mostrarNome());  //  item nome
+itemInventario.addEventListener('onmouseout', esconderNome());
+nextBtn.addEventListener('onmouseover', pointerHand()); //  next
+nextBtn.addEventListener('onmouseout', normalHand());
+nextBtn.addEventListener('click', nextDialog());

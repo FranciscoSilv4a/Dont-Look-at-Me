@@ -29,10 +29,10 @@
             sair vivo desta operação são mínimas, mas cada anomalia que impeço de machucar alguém, criar um 
             buraco numa família, vale a pena.
         </p>
-        <p class="txt dialog" id="dialog2"></p>
+        <p class="txt dialog" id="dialog2">eita funcionou burguês</p>
         <p class="txt dialog" id="dialog3"></p>
         <p class="txt dialog" id="dialog4"></p>
-        <div class="next" onmouseover="pointerHand()" onmouseout="normalHand()" onclick="nextDialog()"></div>
+        <div class="next"></div>
     </div>
     <div class="imgBlack"></div>
     <div class="bloodContainer">
@@ -40,7 +40,7 @@
     </div>
      <div class="inventario">
         <div class="nomeItem">aaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
-        <div class="itemInventario full" id="item1" onmouseover="mostrarNome()"></div>
+        <div class="itemInventario full" id="item1"></div>
         <div class="itemInventario" id="item2"></div>
         <div class="itemInventario" id="item3"></div>
         <div class="itemInventario" id="item4"></div>

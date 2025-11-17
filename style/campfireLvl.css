@@ -91,10 +91,12 @@ body {
 }
 .dialog {
     /* vai virar color: #ffc35a; um por um*/
-    color: transparent;
+    display: none;
+    color: white;
 }
 #dialog1 {
-    color: #ffc35a;
+    display: inline-block;
+    color: white;
 }
 .btn {
     text-align: center;
