@@ -12,6 +12,22 @@
     <script defer src="js/index.js"></script>
 </head>
 <body>
+    <style>
+        a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        color: transparent;
+        cursor: pointer;
+        text-decoration: none;
+        }
+        a span {
+            color: #c8cc98;
+            text-shadow: 1.5px 1.5px #381800, -1.5px -1.5px #381800;
+        }
+    </style>
     <div class="scrollableContainer">
         <h1 class="title">Relatório das Nações Unidas</h1>
         <img class="imagem" id="imgOnu" src="issets/onuLogo.png" alt="ONU logo"></img>
@@ -62,8 +78,7 @@
             proteja e guie, através do vale da sombra da morte, nossa antiga casa.
         </p>
         <div class="btnContainer">
-            <button class="btn" id="btnRetornar">Retornar</button>
-            <button class="btn" id="btnProximo">Próximo</button>
+            <button class="btn" id="btnInicio"><a href="index.php"><span>Início</span></a></button>
         </div>
     </div>
     <p class="version">Versão 0.01</p>

@@ -7,42 +7,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nível 3</title>
-    <link rel="stylesheet" href="style/lvl3.css">
+    <title>Nível 4</title>
+    <link rel="stylesheet" href="style/lvl4.css">
     <script defer src="js/events.js"></script>
 </head>
 <body>
     <div class="mainContainer">
-        <div class="title">Tentativa número 3</div>
+        <div class="title">Tentativa número 4</div>
         <p class="txt">
-            Você foi transportado para uma dimensão anômala. Incontáveis olhos, a única parte do céu possível 
-            de ser compreendida por sua limitada mente humana, te observam incansávelmente. eles veem sua alma, 
-            seus pecados, e questionam: qual é o pecado primordial?
+            Este é...o mundo real. As anomalias passaram de monstros de desenho animado para hordas de bestas do apocalípse bíblico.
+            Você acredita em Deus? Comece a rezar. O Vaticano nos deu uma descrição do demônio, confira nas dicas. Estes não
+             são fruto da imaginação.
         </p>
     </div>
     <form class="btnContainer">
         <p class="title">
             Possibilidades:
         </p>
-        <button class="btn" id="btnA">a) Gula</button>
-        <button class="btn" id="btnB">b) Orgulho</button>
-        <button class="btn" id="btnC">c) Avareza</button>
-        <button class="btn" id="btnD">d) Raiva</button>
+        <button class="btn" id="btnA">a) Aceitar a morte</button>
+        <button class="btn" id="btnB">b) Correr</button>
+        <button class="btn" id="btnC">c) Orar</button>
+        <button class="btn" id="btnD">d) Lutar</button>
         <div class="dica"></div>
     </form>
     <div class="dicaContainer">
         <div class="close"></div>
         <p class="title" id="titleDicas">Dicas</p>
         <p class="txt">
-            1) Todos os pecados derivam deste.
+            Nome: Melzegard, Arauto da Agonia
         </p>
         <p class="txt">
-            2) Primeiro pecado cometido por Lucifer.
+            Habilidades: <br>-> camuflagem<br>-> teletransporte<br>-> manipulação da realidade<br>-> instaurar agonia e desespero
         </p>
         <p class="txt">
-            3) No fundo, todos possuímos.
+            Procedimento: Intervenção divina
         </p>
     </div>
+    <div class="imgBlack"></div>
     <div class="bloodContainer">
         <p class="title" id="gameOver">Score: 500</p>
         <button class="btn" id="restartBtn">Recomeçar</button>

@@ -25,10 +25,10 @@
         <p class="title">
             Possibilidades:
         </p>
-        <button class="btn" id="btnA" onmouseover="pointerHand()" onmouseout="normalHand()">a) Disco voador</button>
-        <button class="btn" id="btnB" onmouseover="pointerHand()" onmouseout="normalHand()">b) Cabeça flutuante</button>
-        <button class="btn" id="btnC" onmouseover="pointerHand()" onmouseout="normalHand()">c) Lua?</button>
-        <button class="btn" id="btnC" onmouseover="pointerHand()" onmouseout="normalHand()">d) Buraco negro</button>
+        <button class="btn" id="btnA">a) Disco voador</button>
+        <button class="btn" id="btnB">b) Cabeça flutuante</button>
+        <button class="btn" id="btnC">c) Lua?</button>
+        <button class="btn" id="btnD">d) Buraco negro</button>
         <div class="dica"></div>
     </div>
     <div class="dicaContainer">
@@ -46,7 +46,8 @@
     </div>
     <div class="imgBlack"></div>
     <div class="bloodContainer">
-        <p class="title" id="gameOver">Sua mente sucumbe</p>
+        <p class="title" id="gameOver">Score: 500</p>
+        <button class="btn" id="restartBtn">Recomeçar</button>
     </div>
     <div class="inventario">
         <div class="itemInventario full" id="item1">Walkie talkie</div>

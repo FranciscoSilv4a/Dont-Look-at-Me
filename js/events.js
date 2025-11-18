@@ -1,6 +1,9 @@
 //  declaração de variáveis importantes
 const dicaContainer = document.querySelector(".dicaContainer");
-const btn = document.getElementsByClassName('.btn');
+const btnA = document.getElementById('btnA');   //  btn de alternativas
+const btnB = document.getElementById('btnB');
+const btnC = document.getElementById('btnC');
+const btnD = document.getElementById('btnD');
 const itemInventario = document.querySelector('#item1');
 const dica = document.querySelector('.dica');
 const close = document.querySelector('.close');
@@ -28,6 +31,15 @@ function closeDicas() {
     dicaContainer.style.display = "none";
 }
 
+btnA.onmouseover = pointerHand; //  botões onmouseover
+btnB.onmouseover = pointerHand;
+btnC.onmouseover = pointerHand;
+btnD.onmouseover = pointerHand;
+btnA.onmouseout = normalHand; //  botões onmouseout
+btnB.onmouseout = normalHand;
+btnC.onmouseout = normalHand;
+btnD.onmouseout = normalHand;
+//
 dica.onmouseover = pointerHand;
 dica.onmouseout = normalHand;
 dica.onclick = openDicas;

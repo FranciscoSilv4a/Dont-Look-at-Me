@@ -16,10 +16,10 @@ body {
     align-items: center;
     height: 100vh;
     width: 100%;
-    background-image: url(../issets/floatinPixelated.jpeg);
+    background-image: url(../issets/hellOnEarthPixelated.png);
     background-size:cover;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     overflow: hidden;
     position: relative;
 }
@@ -198,14 +198,14 @@ body {
     background-image: none;
 }
 .imgBlack {
-    display: none;
+    display: flex;
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: url(../issets/floatinPixelatedMask.png);
+    background-image: url(../issets/hellOnEarthMask.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     transform: translateY(-0.5rem);
     z-index: -1;
 }

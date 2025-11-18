@@ -46,7 +46,7 @@
             <button type="submit"class="btn" id="btnA" name ="alt" value="1" onmouseover="pointerHand()" onmouseout="normalHand()">a) Esqueleto solitário</button>
             <button type="submit"class="btn" id="btnB" name ="alt" onmouseover="pointerHand()" onmouseout="normalHand()">b) Nietzsche ressucitado</button>
             <button type="submit"class="btn" id="btnC" name ="alt" onmouseover="pointerHand()" onmouseout="normalHand()">c) Seu eu verdadeiro</button>
-            <button type="submit"class="btn" id="btnC" name ="alt" onmouseover="pointerHand()" onmouseout="normalHand()">d) Senhor dos mares</button>
+            <button type="submit"class="btn" id="btnD" name ="alt" onmouseover="pointerHand()" onmouseout="normalHand()">d) Senhor dos mares</button>
             <div class="dica" onmouseover="pointerHand()" onmouseout="normalHand()" onclick="openDicas()"></div>
 </form>
     <div class="dicaContainer">
@@ -64,10 +64,11 @@
     </div>
     <div class="imgBlack"></div>
     <div class="bloodContainer">
-        <p class="title" id="gameOver">Sua mente não aguenta tamanha solidão</p>
+        <p class="title" id="gameOver">Score: 500</p>
+        <button class="btn" id="restartBtn">Recomeçar</button>
     </div>
     <div class="inventario">
-        <div class="itemInventario full" id="item1"></div>
+        <div class="itemInventario full" id="item1">Walkie Talkie</div>
     </div>
     <div class="hand"></div>
     <p class="version">Versão 0.01</p>
