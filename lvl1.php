@@ -68,10 +68,6 @@
     </div>
     <div class="inventario">
         <div class="itemInventario full" id="item1"></div>
-        <div class="itemInventario" id="item2"></div>
-        <div class="itemInventario" id="item3"></div>
-        <div class="itemInventario" id="item4"></div>
-        <div class="itemInventario" id="item5"></div>
     </div>
     <div class="hand"></div>
     <p class="version">Versão 0.01</p>

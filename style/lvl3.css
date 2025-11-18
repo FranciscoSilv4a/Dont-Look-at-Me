@@ -166,7 +166,7 @@ body {
     flex-wrap: wrap;
     row-gap: 1rem;
     height: 6rem;
-    width: 30rem;
+    width: 6rem;
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
@@ -187,26 +187,6 @@ body {
     background-color: rgba(117, 117, 117, 0.4);
     backdrop-filter: blur(5px);
     color: transparent;
-    cursor: pointer;
-}
-#item1:hover,
-#item2:hover,
-#item3:hover,
-#item4:hover,
-#item5:hover {
-    color: white;
-    background-image: none;
-}
-.imgBlack {
-    position: absolute;
-    height: 5rem;
-    width:5rem;
-    left: 5rem;
-    bottom: 10rem;
-    background-image: url(../issets/golemArtifactPixelated.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
     cursor: pointer;
 }
 .bloodContainer {
@@ -237,6 +217,10 @@ body {
     text-align: center;
     color: transparent;
     font-weight: bold;
+}
+#item1:hover {
+    color: white;
+    background-image: none;
 }
 
 @keyframes movingHand {

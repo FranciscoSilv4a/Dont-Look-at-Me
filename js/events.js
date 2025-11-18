@@ -1,5 +1,11 @@
 //  declaração de variáveis importantes
+const dicaContainer = document.querySelector(".dicaContainer");
 const btn = document.getElementsByClassName('.btn');
+const itemInventario = document.querySelector('#item1');
+const dica = document.querySelector('.dica');
+const close = document.querySelector('.close');
+const audio1 = document.getElementById('audio1');   // audios
+const audio2 = document.getElementById('audio2');
 
 // animações da mão
 function pointerHand() {
@@ -14,17 +20,23 @@ function normalHand() {
 // abrir e fechar a aba de dicas
 function openDicas() {
     let dicaContainer = document.querySelector(".dicaContainer");
-    let audio1 = document.querySelector("#audio1");
-    let audio2 = document.querySelector("#audio2");
     dicaContainer.style.display = "flex";
-    audio1.play();
-    audio2.play();
 }
+
 function closeDicas() {
     let dicaContainer = document.querySelector(".dicaContainer");
     dicaContainer.style.display = "none";
 }
-// áudios
-    /*document.querySelector(".dica").addEventListener('onclick', () => {
-        document.querySelector(".audioPlayer").play();
-    });*/
+
+dica.onmouseover = pointerHand;
+dica.onmouseout = normalHand;
+dica.onclick = openDicas;
+//
+close.onmouseover = pointerHand;
+close.onmouseout = normalHand;
+close.onclick = closeDicas;
+//
+itemInventario.onmouseover = pointerHand;
+itemInventario.onmouseout = normalHand;
+
+// POR QUE ADD OS EVENTLISTENERS ASSIM FUNCIONA?

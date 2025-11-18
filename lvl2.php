@@ -29,10 +29,10 @@
         <button class="btn" id="btnB" onmouseover="pointerHand()" onmouseout="normalHand()">b) Cabeça flutuante</button>
         <button class="btn" id="btnC" onmouseover="pointerHand()" onmouseout="normalHand()">c) Lua?</button>
         <button class="btn" id="btnC" onmouseover="pointerHand()" onmouseout="normalHand()">d) Buraco negro</button>
-        <div class="dica" onmouseover="pointerHand()" onmouseout="normalHand()" onclick="openDicas()"></div>
+        <div class="dica"></div>
     </div>
     <div class="dicaContainer">
-        <div class="close" onmouseover="pointerHand()" onmouseout="normalHand()" onclick="closeDicas()"></div>
+        <div class="close"></div>
         <p class="title" id="titleDicas">Dicas</p>
         <p class="txt">
             1) A anomalia não está viva, no sentido convencional.
@@ -49,11 +49,7 @@
         <p class="title" id="gameOver">Sua mente sucumbe</p>
     </div>
     <div class="inventario">
-        <div class="itemInventario full" id="item1"></div>
-        <div class="itemInventario" id="item2"></div>
-        <div class="itemInventario" id="item3"></div>
-        <div class="itemInventario" id="item4"></div>
-        <div class="itemInventario" id="item5"></div>
+        <div class="itemInventario full" id="item1">Walkie talkie</div>
     </div>
     <div class="hand"></div>
     <p class="version">Versão 0.01</p>
