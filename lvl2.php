@@ -1,5 +1,23 @@
 <?php
-    //
+    session_start();
+    if($_SESSION['passou1'] == 1) {
+        if($_SERVER['REQUEST_METHOD'] == 'POST') {
+            $valor = $_POST['alt'];
+            if($valor) {
+                $_SESSION['passou2'] = 1;
+                $_SESSION['pontuacao'] += 50;
+                header('location: lvl3.php');
+                exit();
+            }
+            else {
+                header('Location: morte.php');
+                exit();
+            }
+        }
+    }
+    else {
+        header('Location: intrusos.php');
+    }
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +27,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nível 2</title>
     <link rel="stylesheet" href="style/lvl2.css">
-    <script defer src="js/lvl2.js.js"></script>
     <script defer src="js/events.js"></script>
 </head>
 <body>
@@ -21,16 +38,16 @@
             balançando-as de forma calma. Você se sente ameaçado, mas o ambiente parece familiar.
         </p>
     </div>
-    <div class="btnContainer">
+    <form class="btnContainer" action="lvl2.php" method="POST">
         <p class="title">
             Possibilidades:
         </p>
-        <button class="btn" id="btnA">a) Disco voador</button>
-        <button class="btn" id="btnB">b) Cabeça flutuante</button>
-        <button class="btn" id="btnC">c) Lua?</button>
-        <button class="btn" id="btnD">d) Buraco negro</button>
+        <button class="btn" type="submit" id="btnA" name="alt">a) Disco voador</button>
+        <button class="btn" type="submit" id="btnB" name="alt">b) Cabeça flutuante</button>
+        <button class="btn" type="submit" id="btnC" name="alt" value="1">c) Lua?</button>
+        <button class="btn" type="submit" id="btnD" name="alt">d) Buraco negro</button>
         <div class="dica"></div>
-    </div>
+    </form>
     <div class="dicaContainer">
         <div class="close"></div>
         <p class="title" id="titleDicas">Dicas</p>
@@ -45,10 +62,6 @@
         </p>
     </div>
     <div class="imgBlack"></div>
-    <div class="bloodContainer">
-        <p class="title" id="gameOver">Score: 500</p>
-        <button class="btn" id="restartBtn">Recomeçar</button>
-    </div>
     <div class="inventario">
         <div class="itemInventario full" id="item1">Walkie talkie</div>
     </div>

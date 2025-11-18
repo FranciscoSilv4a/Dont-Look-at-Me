@@ -1,5 +1,23 @@
 <?php
-    //
+    session_start();
+    if($_SESSION['passou5'] == 1) {
+        $_SESSION['passou4'] = 0;
+        $pontuacao = $_SESSION['pontuacao'];
+        $nome = $_SESSION['usuario'];
+        $senha = $_SESSION['senha'];
+        if($_SERVER['REQUEST_METHOD'] == 'POST') {
+            include 'conexao.php';
+
+            $sql = "INSERT INTO `tentativas`(`nome`,`senha`, `pontuacao`) VALUES ('$nome', '$senha', '$pontuacao')";
+            mysqli_query($con, $sql);
+
+            header('Location: index.php');
+            exit();
+        }
+    }
+    else {
+        header('Location: intrusos.php');
+    }
 ?>
 
 <!DOCTYPE html>
@@ -20,10 +38,10 @@
         </p>
     </div>
 
-    <div class="btnContainer">
-        <p class="title" id="gameOver">Score: 500</p>
-        <button class="btn" id="btnInicio">Início</button>
-    </div>
+    <form class="btnContainer" action="final.php" method="POST">
+        <p class="title" id="gameOver">Score: <?=$pontuacao?></p>
+        <button class="btn" type="submit" name="alt" id="btnInicio">Início</button>
+    </form>
 
     <div class="mainContainer" id = "mainRight">
         <img src="issets/logo.png" alt="" class= "logo">

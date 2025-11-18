@@ -72,7 +72,7 @@ body {
     font-weight: bold;
 }
 .btnContainer {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -172,7 +172,6 @@ body {
     backdrop-filter: blur(5px);
     box-shadow: 0rem 0.5rem 1rem black;
     position: absolute;
-    z-index: -1;
 }
 .itemInventario {
     display: flex;
@@ -197,18 +196,6 @@ body {
 #item5:hover {
     color: white;
     background-image: none;
-}
-.imgBlack {
-    display: flex;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-image: url(../issets/finalBossMask.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    transform: translateY(-0.5rem);
-    z-index: -1;
 }
 .bloodContainer {
     position: absolute;

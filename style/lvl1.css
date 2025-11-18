@@ -199,7 +199,6 @@ body {
     backdrop-filter: blur(5px);
     box-shadow: 0rem 0.5rem 1rem black;
     position: absolute;
-    z-index: -1;
 }
 .itemInventario {
     display: flex;
@@ -219,7 +218,7 @@ body {
 }
 .bloodContainer {
     position: absolute;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;

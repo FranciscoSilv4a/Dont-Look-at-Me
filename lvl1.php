@@ -1,24 +1,24 @@
 <?php
     session_start();
-    $_SESSION['passou1'] = 0;
-
-    $passou = 0;
-    if($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $valor = $_POST['alt'];
-        if($valor) {
-            $_SESSION['passou1'] = 1;
-            $passou = $_SESSION['passou1'];
+    if($_SESSION['podeComecar'] == 1) {
+        if($_SERVER['REQUEST_METHOD'] == 'POST') {
+            $valor = $_POST['alt'];
+            if($valor) {
+                $_SESSION['passou1'] = 1;
+                $_SESSION['pontuacao'] = 50;
+                header('location: lvl2.php');
+                exit();
+            }
+            else {
+                header('Location: morte.php');
+                exit();
+            }
         }
     }
-?>
-
-<script>
-    let passou = "<?=$passou?>";
-    if(!passou) {
-        document.querySelector('.bloodContainer').style.display = 'flex';
-        console.log(passou);
+    else {
+        header('Location: intrusos.php');
     }
-</script>
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -39,18 +39,18 @@
             se classifica como uma CRIATURA ANÔMALA NEUTRA.
         </p>
     </div>
-    <form class="btnContainer">
+    <form class="btnContainer" action="lvl1.php" method="POST">
         <p class="title">
             Possibilidades:
         </p>
-            <button type="submit"class="btn" id="btnA" name ="alt" value="1" onmouseover="pointerHand()" onmouseout="normalHand()">a) Esqueleto solitário</button>
-            <button type="submit"class="btn" id="btnB" name ="alt" onmouseover="pointerHand()" onmouseout="normalHand()">b) Nietzsche ressucitado</button>
-            <button type="submit"class="btn" id="btnC" name ="alt" onmouseover="pointerHand()" onmouseout="normalHand()">c) Seu eu verdadeiro</button>
-            <button type="submit"class="btn" id="btnD" name ="alt" onmouseover="pointerHand()" onmouseout="normalHand()">d) Senhor dos mares</button>
-            <div class="dica" onmouseover="pointerHand()" onmouseout="normalHand()" onclick="openDicas()"></div>
+            <button type="submit"class="btn" id="btnA" name ="alt" value="1">a) Esqueleto solitário</button>
+            <button type="submit"class="btn" id="btnB" name ="alt">b) Nietzsche ressucitado</button>
+            <button type="submit"class="btn" id="btnC" name ="alt">c) Seu eu verdadeiro</button>
+            <button type="submit"class="btn" id="btnD" name ="alt">d) Senhor dos mares</button>
+            <div class="dica"></div>
 </form>
     <div class="dicaContainer">
-        <div class="close" onmouseover="pointerHand()" onmouseout="normalHand()" onclick="closeDicas()"></div>
+        <div class="close"></div>
         <p class="title" id="titleDicas">Dicas</p>
         <p class="txt">
             1) A anomalia não está viva, no sentido convencional.
@@ -63,10 +63,6 @@
         </p>
     </div>
     <div class="imgBlack"></div>
-    <div class="bloodContainer">
-        <p class="title" id="gameOver">Score: 500</p>
-        <button class="btn" id="restartBtn">Recomeçar</button>
-    </div>
     <div class="inventario">
         <div class="itemInventario full" id="item1">Walkie Talkie</div>
     </div>

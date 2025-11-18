@@ -1,5 +1,24 @@
 <?php
-    //
+    session_start();
+    if($_SESSION['passou2'] == 1) {
+        $_SESSION['passou1'] = 0;
+        if($_SERVER['REQUEST_METHOD'] == 'POST') {
+            $valor = $_POST['alt'];
+            if($valor) {
+                $_SESSION['passou3'] = 1;
+                $_SESSION['pontuacao'] += 50;
+                header('location: lvl4.php');
+                exit();
+            }
+            else {
+                header('Location: morte.php');
+                exit();
+            }
+        }
+    }
+    else {
+        header('Location: intrusos.php');
+    }
 ?>
 
 <!DOCTYPE html>
@@ -20,14 +39,14 @@
             seus pecados, e questionam: qual é o pecado primordial?
         </p>
     </div>
-    <form class="btnContainer">
+    <form class="btnContainer" action="lvl3.php" method="POST">
         <p class="title">
             Possibilidades:
         </p>
-        <button class="btn" id="btnA">a) Gula</button>
-        <button class="btn" id="btnB">b) Orgulho</button>
-        <button class="btn" id="btnC">c) Avareza</button>
-        <button class="btn" id="btnD">d) Raiva</button>
+        <button class="btn" id="btnA" type="submit" name="alt">a) Gula</button>
+        <button class="btn" id="btnB" type="submit" name="alt" value="1">b) Orgulho</button>
+        <button class="btn" id="btnC" type="submit" name="alt">c) Avareza</button>
+        <button class="btn" id="btnD" type="submit" name="alt">d) Raiva</button>
         <div class="dica"></div>
     </form>
     <div class="dicaContainer">
@@ -42,10 +61,6 @@
         <p class="txt">
             3) No fundo, todos possuímos.
         </p>
-    </div>
-    <div class="bloodContainer">
-        <p class="title" id="gameOver">Score: 500</p>
-        <button class="btn" id="restartBtn">Recomeçar</button>
     </div>
     <div class="inventario">
         <div class="itemInventario full" id="item1">Walkie talkie</div>
