@@ -87,7 +87,7 @@ input {
 }
 .title {
     position: absolute;
-    top: 3rem;
+    top: 1rem;
     text-align: center;
     color: #3fdd00;
     font-size: 2rem;
@@ -101,4 +101,11 @@ input {
 }
 .tbl {
     border: 1px;
+    background-color: rgb(28, 28, 28);
+    color: white;
+    width: 20rem;
+    align-items: center;
+}
+.tbl .dataTr {
+    background-color: #585018;
 }

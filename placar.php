@@ -1,8 +1,5 @@
 <?php
-    if($_SESSION['placar'] != 1) {
-        header('Location: index.php');
-        exit();
-    }
+
 ?>
 
 <!DOCTYPE html>
@@ -32,25 +29,25 @@
     </style>
     <div class="mainContainer">
         <div class="title">Placar</div>
+        <table border = '1' class='tbl'>
         <?php
             include 'conexao.php';
             $sql = "SELECT * FROM `tentativas` WHERE 'nome' != '' AND 'senha' != '' ORDER BY 'pontuacao' DESC";
             $resultado = mysqli_query($con, $sql);
             echo "
-                </table border = '1' class='tbl'>
-                    <tr>
+                    <tr class='dataTr'>
                         <th>Nome</th>
                         <th>Pontuação</th>
                     </tr>
             ";
             while($fetch = mysqli_fetch_array($resultado)) {
                 echo "<tr>";
-                echo "<th>" . $fetch['nome'] . '</th';
-                echo "<th>" . $fetch['pontuacao'] . '</th';
-                echo "<tr>";
+                echo "<td>" . $fetch['nome'] . "</td";
+                echo "<td>" . $fetch['pontuacao'] . "</td";
+                echo "</tr>";
             }
-            echo "</table>";
         ?>
+        </table>
         <button class="btn" id="btnInicio"><a href="index.php"><span>Início</span></a></button>
     </div>
     <p class="version">Versão 0.01</p>
