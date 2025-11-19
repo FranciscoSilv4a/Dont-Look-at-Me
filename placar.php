@@ -1,5 +1,9 @@
 <?php
-
+    session_start();
+    if(empty($_SESSION['usuario'])) {
+        header('Location: index.php');
+        exit();
+    }
 ?>
 
 <!DOCTYPE html>
@@ -29,21 +33,22 @@
     </style>
     <div class="mainContainer">
         <div class="title">Placar</div>
-        <table border = '1' class='tbl'>
+        <table border = '1' align="center" class='tbl'>
         <?php
+            $nome = $_SESSION['usuario'];
             include 'conexao.php';
-            $sql = "SELECT * FROM `tentativas` WHERE 'nome' != '' AND 'senha' != '' ORDER BY 'pontuacao' DESC";
+            $sql = "SELECT * FROM `tentativas` WHERE `nome` = '$nome' AND `senha` != '' ORDER BY `pontuacao` DESC";
             $resultado = mysqli_query($con, $sql);
             echo "
                     <tr class='dataTr'>
-                        <th>Nome</th>
-                        <th>Pontuação</th>
+                    <th>Nome</th>
+                    <th>Pontuação</th>
                     </tr>
             ";
             while($fetch = mysqli_fetch_array($resultado)) {
                 echo "<tr>";
-                echo "<td>" . $fetch['nome'] . "</td";
-                echo "<td>" . $fetch['pontuacao'] . "</td";
+                echo "<td>" . $fetch['nome'] . "</td>";
+                echo "<td>" . $fetch['pontuacao'] . "</td>";
                 echo "</tr>";
             }
         ?>
