@@ -8,11 +8,13 @@
     $_SESSION['passou3'] = 0;
     $_SESSION['passou4'] = 0;
     $_SESSION['passou5'] = 0;
-    
+    $_SESSION['placar'] = 0;
+
     $usuario = "";
     $error = "";
     if(!empty($_SESSION['usuario'])) {
         $usuario = $_SESSION['usuario'];
+        $_SESSION['placar'] = 1;
     }
     if($_SERVER['REQUEST_METHOD'] == 'POST') {
         if(!empty($usuario)) {
