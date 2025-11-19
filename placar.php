@@ -1,6 +1,7 @@
 <?php
     session_start();
     if(empty($_SESSION['usuario'])) {
+        $_SESSION['error'] = "Logue para ver o placar.";
         header('Location: index.php');
         exit();
     }
