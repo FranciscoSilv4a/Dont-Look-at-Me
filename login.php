@@ -25,8 +25,11 @@
             <label for="senha" class="txt">Senha</label>
             <input type="password" name = "senha"required min-length="8" minlength="8">
         </div>
-        <button class="btn" id="btnHistoria">Logar</button>
-        <a href="cadastro.php" class="txt">Não tem uma conta?</a>
+        <div class="btnCont">
+            <button class="btn" id="btnHistoria">Logar</button>
+            <button class="btn" id="btnInicio"><a href="index.php"><span>Início</span></a></button>
+        </div> 
+        <a href="cadastro.php" class="txt" id="redirecLink">Não tem uma conta?</a>
         <p class="txt" id="error"><?=$error?></p>
 </form>
     <p class="version">Versão 0.01</p>
