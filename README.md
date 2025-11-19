@@ -30,6 +30,12 @@ Criar um jogo de **adivinhação**, tomada de decisões, que **atualizasse dinam
 
 ---
 
+## Apresentação
+
+[Vídeo de apresentação](https://youtu.be/tVIqsdNC8nI)
+
+---
+
 ## Rodando localmente
 
 Você pode fazer um **fork** do repositório, mas também, ir em seu terminal e digitar o seguinte comando, para clonar este repositório para seu diretório atual:
