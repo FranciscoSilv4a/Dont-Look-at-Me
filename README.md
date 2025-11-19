@@ -21,3 +21,8 @@ Criar um jogo de **adivinhação**, tomada de decisões, que **atualizasse dinam
 - ### JavaScript
 - ### PHP
 - ### SQL
+
+---
+
+## Rodando localmente
+
