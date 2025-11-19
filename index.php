@@ -12,6 +12,10 @@
 
     $usuario = "";
     $error = "";
+    if(!empty($_SESSION['error'])) {
+        $error = $_SESSION['error'];
+        $_SESSION['error'] = "";
+    }
     if(!empty($_SESSION['usuario'])) {
         $usuario = $_SESSION['usuario'];
         $_SESSION['placar'] = 1;
