@@ -49,7 +49,7 @@ A partir daí, você deve startar seu servidor local, e o PHPMyAdmin, de modo a 
 ## Link do projeto hospedado no InfinityFree (problemas de produção e incompatibilidade com certos navegadores)
 ### [Não funciona no momento]
 
-> [projeto hospedado +-](franciscopw.infinityfreeapp.com)
+> [projeto hospedado +-](http:/www.franciscopw.infinityfreeapp.com)
 
 ---
 
