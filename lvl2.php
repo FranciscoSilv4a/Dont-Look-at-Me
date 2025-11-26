@@ -52,13 +52,13 @@
         <div class="close"></div>
         <p class="title" id="titleDicas">Dicas</p>
         <p class="txt">
-            1) A anomalia não está viva, no sentido convencional.
+            1) A anomalia não tem anatomia humana.
         </p>
         <p class="txt">
-            2) A criatura não é uma personificação do abstrato.
+            2) Ela não é extraterrestre.
         </p>
         <p class="txt">
-            3) O alvo não aparenta ter nenhuma autoridade sobre a natureza.
+            3) Ela não tem um campo gravitacional maior do que a Terra.
         </p>
     </div>
     <div class="imgBlack"></div>
