@@ -6,7 +6,7 @@ $nome = $_POST['nome'];
 $senha = $_POST['senha'];
 
 if(!empty($senha) && strlen($senha) <= 8) {
-      $sql = "SELECT * FROM `tentativas` WHERE `senha`='$senha'"; //  var dentro de "" tem que ter ''
+      $sql = "SELECT * FROM `tentativas` WHERE `nome`='$nome'"; //  var dentro de "" tem que ter ''
 
       $resultado = mysqli_query($con, $sql);  //  o banco retorna uma array de tuplas/linhas nesse caso
 
